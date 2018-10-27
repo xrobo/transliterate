@@ -2,11 +2,14 @@
 # -*- coding: utf-8 -*-
 
 def c2l(text):
-    ltext = ''
-    for c in text.decode("utf-8"):
-        if c in chars:
-            ltext += chars[c]
-    return ltext
+	ltext = ''
+	errors = False
+	for c in text.decode("utf-8"):
+		if c in chars:
+			ltext += chars[c]
+	else:
+			errors = True
+	return ltext, errors
 
 chars = {
     u'а': 'a',

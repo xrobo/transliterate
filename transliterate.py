@@ -1,5 +1,8 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
+"""
+Translating cyrillic to latin symbols.
+"""
 
 def c2l(text):
 	ltext = ''
